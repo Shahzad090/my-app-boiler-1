@@ -4,7 +4,7 @@ const About = () => {
   return (
     <>
     <div>
-      <h1>Welok to About</h1>
+      <h1>Welo to About</h1>
     </div>
     </>
   );
