@@ -1,23 +1,37 @@
 import './App.css';
-import 'antd/dist/reset.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Home from './pages/Home';
-import { Input } from "antd";
+import Home from './Router Components/Home';
+import About from './Router Components/About';
+import Contact from './Router Components/Contact';
+import Inputbutton from './Inputbutton';
+import Navbar from './Navbar';
+
+
 
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} /> 
-      </Routes>
+      <Main />
     </Router>
   );
 }
 
+function Main() {
+  return (
+    <>
+    <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/input" element={<Inputbutton />} /> 
+
+      </Routes>
+
+
+    </>
+  );
+}
 
 export default App;
