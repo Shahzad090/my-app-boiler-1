@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Router Components/Home';
 import About from './Router Components/About';
 import Contact from './Router Components/Contact';
-import Inputbutton from './Inputbutton';
+import SKButton from '../src/component/SKButton ';
 import Navbar from './Navbar';
 
 
