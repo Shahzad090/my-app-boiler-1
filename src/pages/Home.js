@@ -26,7 +26,7 @@ const Home = () => {
           Go To About Us
         </Button>
         <Button type="primary" onClick={handleContactClick}>
-          Go To Conta 
+          Go To Cont
         </Button>
       </div>
     </div>
